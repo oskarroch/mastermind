@@ -131,6 +131,8 @@ function startNewGame() {
     colorCheck = [];
     colorAutoCheck = [];
     round = 0;
+    $('.butt-wrapper').css({'bottom': '2%'});
+    $('.bl-wrapper').css({'bottom': '-1000px'});
 }
 
 //win condition checking
@@ -169,7 +171,7 @@ function checkIfEqual() {
     } else {
         colorCheck = [];
         console.log('thats wrong');
-    } 
+    }
 }
 
 //array.remove() function
