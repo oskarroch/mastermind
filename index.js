@@ -37,7 +37,7 @@ $('.accept').on('click', function () {
             if (4 - colorArrM.length === 1) {
                 console.log(`You still have to choose 1 more color!`)
             } else {
-                console.log(`You still have to choose ${ 4 - colorArrM.length} more colors!`);
+                console.log(`You still have to choose ${4 - colorArrM.length} more colors!`);
             }
         }
         //player turn
@@ -45,14 +45,14 @@ $('.accept').on('click', function () {
         if (colorArrP.length === 4) {
             turn = 'mCheck';
             console.log(colorArrP);
-            $('.butt-wrapper').css({'bottom': '-1000px'})
-            $('.bl-wrapper').css({'bottom': '5%'})
+            $('.butt-wrapper').css({ 'bottom': '-1000px' })
+            $('.bl-wrapper').css({ 'bottom': '5%' })
             colorFinder();
         } else {
             if (4 - colorArrM.length === 1) {
                 console.log(`You still have to choose 1 more color!`)
             } else {
-                console.log(`You still have to choose ${ 4 - colorArrM.length} more colors!`);
+                console.log(`You still have to choose ${4 - colorArrM.length} more colors!`);
             }
         }
         //check turn
@@ -117,8 +117,8 @@ function startNewRound() {
         colorCheck = [];
         colorAutoCheck = [];
         round++;
-        $('.butt-wrapper').css({'bottom': '2%'});
-        $('.bl-wrapper').css({'bottom': '-1000px'});
+        $('.butt-wrapper').css({ 'bottom': '2%' });
+        $('.bl-wrapper').css({ 'bottom': '-1000px' });
     }
 }
 
@@ -131,8 +131,8 @@ function startNewGame() {
     colorCheck = [];
     colorAutoCheck = [];
     round = 0;
-    $('.butt-wrapper').css({'bottom': '2%'});
-    $('.bl-wrapper').css({'bottom': '-1000px'});
+    $('.butt-wrapper').css({ 'bottom': '2%' });
+    $('.bl-wrapper').css({ 'bottom': '-1000px' });
 }
 
 //win condition checking
@@ -141,9 +141,9 @@ function checkWinCondition() {
     for (i = 0; i < 4; i++) {
         if (colorAutoCheck.includes('white') === true) {
             colorAutoCheck.remove('white');
-            console.log(i);
         } else {
             startNewRound();
+            return;
         }
     }
     if (i === 4) {
