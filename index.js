@@ -60,6 +60,7 @@ $('.accept').on('click', function () {
         if (colorAutoCheck.length === colorCheck.length) {
             checkIfEqual();
         } else {
+            colorCheck = [];
             console.log('thats not true');
         }
     }
