@@ -1,68 +1,65 @@
 body {
-    margin: 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    overflow: hidden;
+  margin: 0;
+  background-color: black;
+  overflow: hidden;
 }
 
-.butt-wrapper {
-    position: absolute;
-    width: 20%;
-    height: 20%;
-    left: 0; 
-    right: 0; 
-    margin-left: auto; 
-    margin-right: auto; 
-    bottom: 2%;
-    text-align: center;
+#buttonWrapper {
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 2%;
+  text-align: center;
 }
 
 button {
-    height: 45%;
-    width: 30%;
-    border: 0;
+  height: 45%;
+  width: 30%;
+  border: 0;
 }
 
 button:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
-.accept {
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    right: 10%;
-    top: 65%;
+#accept {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  right: 10%;
+  top: 65%;
 }
 
-.remove {
-    position: absolute;
-    width: 80px;
-    height: 40px;
-    bottom: 8%;
-    left:  15%;
+#remove {
+  position: absolute;
+  width: 80px;
+  height: 40px;
+  bottom: 8%;
+  left: 15%;
 }
 
-.bl-wrapper {
-    position: absolute;
-    width: 10%;
-    height: 10%;
-    left: 0; 
-    right: 0; 
-    margin-left: auto; 
-    margin-right: auto; 
-    bottom: -1000px;
-    text-align: center;
+#blackWhiteWrapper {
+  position: absolute;
+  width: 10%;
+  height: 10%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: -1000px;
+  text-align: center;
 }
 
 #black {
-    width: 40%;
-    height: 70%;
+  width: 40%;
+  height: 70%;
 }
 
 #white {
-    width: 40%;
-    height: 70%;
+  width: 40%;
+  height: 70%;
 }
