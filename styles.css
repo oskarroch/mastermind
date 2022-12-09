@@ -41,25 +41,3 @@ button:hover {
   bottom: 8%;
   left: 15%;
 }
-
-#blackWhiteWrapper {
-  position: absolute;
-  width: 10%;
-  height: 10%;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  bottom: -1000px;
-  text-align: center;
-}
-
-#black {
-  width: 40%;
-  height: 70%;
-}
-
-#white {
-  width: 40%;
-  height: 70%;
-}
