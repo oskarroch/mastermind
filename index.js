@@ -1,19 +1,3 @@
-// Generates a random sequence of colors
-function generateAnswerSequence() {
-  // Create an empty array to store the answer sequence
-  let sequence = [];
-
-  // Generate a random number between 0 and 5
-  for (let i = 0; i < 4; i++) {
-    // Use the random number to look up a color in the colorOptions object
-    // and push it to the sequence array
-    sequence.push(colorOptions[Math.floor(Math.random() * 6)]);
-  }
-
-  // Return the generated sequence
-  return sequence;
-}
-
 // An object containing the possible colors for the game
 const colorOptions = {
   0: "red",
@@ -39,6 +23,22 @@ let gameState = {
 const elements = document.querySelectorAll(
   "#red,#green,#blue,#navy,#pink,#yellow"
 );
+
+// Generates a random sequence of colors
+function generateAnswerSequence() {
+  // Create an empty array to store the answer sequence
+  let sequence = [];
+
+  // Generate a random number between 0 and 5
+  for (let i = 0; i < 4; i++) {
+    // Use the random number to look up a color in the colorOptions object
+    // and push it to the sequence array
+    sequence.push(colorOptions[Math.floor(Math.random() * 6)]);
+  }
+
+  // Return the generated sequence
+  return sequence;
+}
 
 elements.forEach(function (element) {
   element.addEventListener("click", function () {
