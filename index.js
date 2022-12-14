@@ -19,11 +19,6 @@ let gameState = {
   currentRound: 0, // The current round number
 };
 
-// Choose colors on button clicks
-const elements = document.querySelectorAll(
-  "#red,#green,#blue,#navy,#pink,#yellow"
-);
-
 // Generates a random sequence of colors
 function generateAnswerSequence() {
   // Create an empty array to store the answer sequence
@@ -39,6 +34,11 @@ function generateAnswerSequence() {
   // Return the generated sequence
   return sequence;
 }
+
+// Choose colors on button clicks
+const elements = document.querySelectorAll(
+  "#red,#green,#blue,#navy,#pink,#yellow"
+);
 
 elements.forEach(function (element) {
   element.addEventListener("click", function () {
